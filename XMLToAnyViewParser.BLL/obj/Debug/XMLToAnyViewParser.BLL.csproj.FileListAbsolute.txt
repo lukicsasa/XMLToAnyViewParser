@@ -1,0 +1,8 @@
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.BLL.dll
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.BLL.pdb
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.Models.dll
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\Newtonsoft.Json.dll
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.Models.pdb
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.csprojResolveAssemblyReference.cache
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.dll
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.pdb

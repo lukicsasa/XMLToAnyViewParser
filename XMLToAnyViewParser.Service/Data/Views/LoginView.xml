@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<form>
+  <id>loginForm</id>
+
+  <textbox>
+    <id>username</id>
+    <description>Username</description>
+  </textbox>
+
+  <textbox>
+    <id>password</id>
+    <description>Password</description>
+  </textbox>
+
+  <button>
+    <id>submit</id>
+    <description>Login</description>
+  </button>
+
+  <scriptPath>js/index.js</scriptPath>
+</form>
