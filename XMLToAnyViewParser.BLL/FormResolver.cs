@@ -17,19 +17,13 @@ namespace XMLToAnyViewParser.BLL
         {
             FormSubmitResponseJson response = new FormSubmitResponseJson();
 
-            if(model is LoginViewModel)
-            {
-                return null;
-            }
-
             switch (formType)
             {
                 case "login":
 
-                    LoginViewModel vm = model as LoginViewModel;
-                    response.Data = "u did it";
+                    response.Data = model.ResolveForm();
                     response.Status = ResponseStatus.Ok;
-                    //response.Message = messageStatusReader.GetStatusMessage(response.Status);
+                    response.Message = messageStatusReader.GetStatusMessage(response.Status);
 
                     return response;
 

@@ -198,3 +198,6 @@ E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\Antlr3.Runtime
 E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\obj\Debug\XMLToAnyViewParser.Service.csprojResolveAssemblyReference.cache
 E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\obj\Debug\XMLToAnyViewParser.Service.dll
 E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\obj\Debug\XMLToAnyViewParser.Service.pdb
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\MultipartDataMediaFormatter.dll
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Common.dll
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Common.pdb

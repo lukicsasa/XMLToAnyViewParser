@@ -14,6 +14,23 @@ namespace XMLToAnyViewParser.Service
         {
             // Web API configuration and services
 
+            var json = config.Formatters.JsonFormatter;
+
+            // Solve reference loop problem
+            json.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+
+            // Use camel case for json serialization
+            json.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver();
+
+            // Serialize enums as strings
+            json.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
+
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/json"));
+
+
+            // Remove xml formatter
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
+
             config.EnableCors();
 
             
@@ -29,17 +46,16 @@ namespace XMLToAnyViewParser.Service
                 name: "PostMethodRoute",
                 routeTemplate: "api/{controller}");
 
-            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/json"));
 
-            config.Formatters.JsonFormatter.SerializerSettings.Converters.Add(new DataConverter());
+            //config.Formatters.JsonFormatter.SerializerSettings.Converters.Add(new DataConverter());
 
-            config.Formatters.Remove(config.Formatters.XmlFormatter);
+            //config.Formatters.Remove(config.Formatters.XmlFormatter);
 
-            //config.Formatters.JsonFormatter.SerializerSettings.TypeNameHandling = Newtonsoft.Json.TypeNameHandling.Auto;
-            config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
-            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-            config.Formatters.JsonFormatter.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
-            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            ////config.Formatters.JsonFormatter.SerializerSettings.TypeNameHandling = Newtonsoft.Json.TypeNameHandling.Auto;
+            //config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
+            //config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            //config.Formatters.JsonFormatter.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
+            //config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
         }
     }

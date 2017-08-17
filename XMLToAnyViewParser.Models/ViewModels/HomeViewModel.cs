@@ -9,9 +9,9 @@ namespace XMLToAnyViewParser.Models.ViewModels
     
     public class HomeViewModel : GeneralModel
     {
-        //public override object ResolveForm()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public override object ResolveForm()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

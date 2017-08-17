@@ -80,6 +80,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MultipartDataMediaFormatter, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MultipartDataMediaFormatter.1.1.0.0\lib\net45\MultipartDataMediaFormatter.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -196,10 +199,12 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ParserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\GlobalExceptionHandler.cs" />
     <Compile Include="Helpers\TokenAuthorizeAttribute.cs" />
     <Compile Include="Models\UserJwtModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -262,6 +267,10 @@
     <ProjectReference Include="..\XMLToAnyViewParser.BLL\XMLToAnyViewParser.BLL.csproj">
       <Project>{d0434711-748b-43f1-98c5-0b8bdacb4824}</Project>
       <Name>XMLToAnyViewParser.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLToAnyViewParser.Common\XMLToAnyViewParser.Common.csproj">
+      <Project>{E04445F9-366D-4F2F-A676-B1686BA89371}</Project>
+      <Name>XMLToAnyViewParser.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\XMLToAnyViewParser.Models\XMLToAnyViewParser.Models.csproj">
       <Project>{64e52528-aa2f-4131-8017-b8ee37af0b63}</Project>

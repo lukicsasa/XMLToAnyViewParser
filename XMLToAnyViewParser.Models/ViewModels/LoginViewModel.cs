@@ -8,9 +8,9 @@ namespace XMLToAnyViewParser.Models.ViewModels
         public string Username { get; set; }
         public string Password { get; set; }
 
-        //public override object ResolveForm()
-        //{
-        //    return "you did it";
-        //}
+        public override object ResolveForm()
+        {
+            return "you did it";
+        }
     }
 }
