@@ -11,9 +11,40 @@ namespace XMLToAnyViewParser.BLL
 {
     public class FormResolver : IFormResolver
     {
-        public FormSubmitResponseJson ResolveForm(GeneralModel model)
+        private MessageStatusReader messageStatusReader = new MessageStatusReader();
+
+        public FormSubmitResponseJson ResolveForm(GeneralModel model, string formType)
         {
-            throw new NotImplementedException();
+            FormSubmitResponseJson response = new FormSubmitResponseJson();
+
+            if(model is LoginViewModel)
+            {
+                return null;
+            }
+
+            switch (formType)
+            {
+                case "login":
+
+                    LoginViewModel vm = model as LoginViewModel;
+                    response.Data = "u did it";
+                    response.Status = ResponseStatus.Ok;
+                    //response.Message = messageStatusReader.GetStatusMessage(response.Status);
+
+                    return response;
+
+                case "home":
+
+                    return response;
+
+            }
+
+            response.Status = ResponseStatus.Unknown;
+            response.Data = null;
+            response.Message = messageStatusReader.GetStatusMessage(response.Status);
+
+            return response;
         }
+        
     }
 }

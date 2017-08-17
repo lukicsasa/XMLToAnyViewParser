@@ -14,3 +14,11 @@ C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyV
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.csprojResolveAssemblyReference.cache
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.dll
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.pdb
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.BLL.dll
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.BLL.pdb
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\Newtonsoft.Json.dll
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.Models.dll
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.Models.pdb
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.csprojResolveAssemblyReference.cache
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.dll
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.pdb

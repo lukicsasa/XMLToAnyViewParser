@@ -10,6 +10,6 @@ namespace XMLToAnyViewParser.BLL.Interfaces
 {
     public interface IFormResolver
     {
-        FormSubmitResponseJson ResolveForm(GeneralModel model);
+        FormSubmitResponseJson ResolveForm(GeneralModel model, string formType);
     }
 }

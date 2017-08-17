@@ -8,6 +8,6 @@ namespace XMLToAnyViewParser.Models
 {
     public class GetViewResponse
     {
-        public string ViewHTML { get; set; }
+        public string View { get; set; }
     }
 }

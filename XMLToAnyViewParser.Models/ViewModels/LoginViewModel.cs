@@ -2,11 +2,15 @@
 
 namespace XMLToAnyViewParser.Models.ViewModels
 {
+    
     public class LoginViewModel : GeneralModel
     {
-        private string username;
-        private string password;
+        public string Username { get; set; }
+        public string Password { get; set; }
 
-       
+        //public override object ResolveForm()
+        //{
+        //    return "you did it";
+        //}
     }
 }

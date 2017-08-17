@@ -1,6 +1,10 @@
-﻿namespace XMLToAnyViewParser.Models.ViewModels
+﻿using System;
+
+namespace XMLToAnyViewParser.Models.ViewModels
 {
-    public class GeneralModel
+    
+    public abstract class GeneralModel
     {
+        public string ViewModelType { get; set; }
     }
 }

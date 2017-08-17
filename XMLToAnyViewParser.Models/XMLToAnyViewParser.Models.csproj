@@ -50,10 +50,8 @@
     <Compile Include="RequestModel.cs" />
     <Compile Include="StatusMessage.cs" />
     <Compile Include="ViewModels\GeneralModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="config.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

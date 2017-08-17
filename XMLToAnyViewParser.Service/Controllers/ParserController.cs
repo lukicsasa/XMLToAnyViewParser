@@ -7,6 +7,8 @@ using System.Web.Http;
 using XMLToAnyViewParser.Models;
 using XMLToAnyViewParser.BLL;
 using System.Web.Http.Cors;
+using Newtonsoft.Json;
+using XMLToAnyViewParser.Models.ViewModels;
 
 namespace XMLToAnyViewParser.Service.Controllers
 {
@@ -16,17 +18,36 @@ namespace XMLToAnyViewParser.Service.Controllers
         [HttpGet]
         public IHttpActionResult Get(string client, string view)
         {
-            GetViewResponse response = new GetViewResponse();
+            try
+            {
+                GetViewResponse response = new GetViewResponse();
 
-            response.ViewHTML = XmlToViewParser.Service.ViewsTransformatter.Transform(client, view);
+                response.View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, view);
 
-            return Ok(response);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPost]
-        public IHttpActionResult Post([FromBody] RequestModel request)
+        public HttpResponseMessage Post(GeneralModel request)
         {
-            return Ok();
+
+            try
+            {
+                var r = request as LoginViewModel;
+                //var response = XmlToViewParser.Service.FormResolver.ResolveForm(request, request.ViewModelType);
+
+                return Request.CreateResponse(HttpStatusCode.OK, new LoginViewModel());
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
         }
     }
 }

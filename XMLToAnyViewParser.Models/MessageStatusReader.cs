@@ -13,12 +13,15 @@ namespace XMLToAnyViewParser.Models
     {
         
 
-        public List<StatusMessage> GetStatusMessageList()
+        public string GetStatusMessage(ResponseStatus status)
         {
             using (StreamReader r = new StreamReader("config.json"))
             {
                 string json = r.ReadToEnd();
-                return JsonConvert.DeserializeObject<List<StatusMessage>>(json);
+                var listOfMessages = JsonConvert.DeserializeObject<List<StatusMessage>>(json);
+
+                var statusMessage = listOfMessages.FirstOrDefault(m => m.Status == status.ToString());
+                return statusMessage.Message;
             }
         }
     }

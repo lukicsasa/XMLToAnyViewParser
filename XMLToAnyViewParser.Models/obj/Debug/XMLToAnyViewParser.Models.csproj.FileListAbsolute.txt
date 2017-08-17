@@ -9,3 +9,8 @@ C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToA
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\obj\Debug\XMLToAnyViewParser.Models.csprojResolveAssemblyReference.cache
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\obj\Debug\XMLToAnyViewParser.Models.dll
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\obj\Debug\XMLToAnyViewParser.Models.pdb
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToAnyViewParser.Models.dll
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToAnyViewParser.Models.pdb
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\Newtonsoft.Json.dll
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\obj\Debug\XMLToAnyViewParser.Models.dll
+E:\Uci\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\obj\Debug\XMLToAnyViewParser.Models.pdb
