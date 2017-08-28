@@ -9,20 +9,20 @@ using XMLToAnyViewParser.BLL;
 using System.Web.Http.Cors;
 using Newtonsoft.Json;
 using XMLToAnyViewParser.Models.ViewModels;
+using XMLToAnyViewParser.Service.Helpers;
 
 namespace XMLToAnyViewParser.Service.Controllers
 {
-    [EnableCors(origins: "http://localhost:55899", headers: "*", methods: "*")]
     public class ParserController : ApiController
     {
+        [TokenAuthorize]
         [HttpGet]
         public IHttpActionResult Get(string client, string view)
         {
             try
             {
-                GetViewResponse response = new GetViewResponse();
-
-                response.View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, view);
+                GetViewResponse response =
+                    new GetViewResponse {View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, view)};
 
                 return Ok(response);
             }
@@ -33,6 +33,21 @@ namespace XMLToAnyViewParser.Service.Controllers
             }
         }
 
+        [AllowAnonymous]
+        [HttpGet]
+        public IHttpActionResult GetLoginPage(string client)
+        {
+            try
+            {
+                GetViewResponse response =
+                    new GetViewResponse {View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, "login")};
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
         
     }
 }

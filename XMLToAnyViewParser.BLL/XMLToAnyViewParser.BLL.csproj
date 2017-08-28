@@ -46,6 +46,7 @@
     <Compile Include="FormResolver.cs" />
     <Compile Include="Interfaces\IFormResolver.cs" />
     <Compile Include="Interfaces\IViewsTransformatter.cs" />
+    <Compile Include="Managers\UserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Interfaces\ITemplatePathService.cs" />
     <Compile Include="Services\Interfaces\IViewPathService.cs" />

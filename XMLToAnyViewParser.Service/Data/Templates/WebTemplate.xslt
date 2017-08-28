@@ -5,7 +5,6 @@
 
   <xsl:template match="/form">
 
-
     <form name="{id}" action="http://localhost:52042/parser/web/{id}" method="POST">
       <!-- parsing textboxes -->
       <xsl:for-each select="./textbox">
