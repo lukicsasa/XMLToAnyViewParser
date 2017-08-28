@@ -54,10 +54,6 @@
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\XMLToAnyViewParser.Data.Model\XMLToAnyViewParser.Data.Model.csproj">
       <Project>{902BCB1D-1078-4E4D-8B97-F03CA5832127}</Project>
       <Name>XMLToAnyViewParser.Data.Model</Name>
@@ -66,6 +62,10 @@
       <Project>{A19BDEE9-4644-4572-8305-EEB0E8187568}</Project>
       <Name>XMLToAnyViewParser.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
