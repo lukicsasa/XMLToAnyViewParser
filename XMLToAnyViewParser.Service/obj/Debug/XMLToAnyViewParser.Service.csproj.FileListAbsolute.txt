@@ -204,3 +204,7 @@ C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\Antlr3.Runt
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\obj\Debug\XMLToAnyViewParser.Service.csprojResolveAssemblyReference.cache
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\obj\Debug\XMLToAnyViewParser.Service.dll
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\obj\Debug\XMLToAnyViewParser.Service.pdb
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\JWT.dll
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\MultipartDataMediaFormatter.dll
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Common.dll
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Common.pdb
