@@ -5,6 +5,7 @@ using XMLToAnyViewParser.BLL.Managers;
 using XMLToAnyViewParser.Common.Helpers;
 using XMLToAnyViewParser.Common.Models;
 using XMLToAnyViewParser.Entities;
+using XMLToAnyViewParser.Service.Helpers;
 using XMLToAnyViewParser.Service.Models;
 
 namespace XMLToAnyViewParser.Service.Controllers
@@ -19,7 +20,7 @@ namespace XMLToAnyViewParser.Service.Controllers
             UserModel userModel = Mapper.Map(user);
             return new { User = userModel, Token = CreateLoginToken(user) };
         }
-
+        
         [NonAction]
         private string CreateLoginToken(User user)
         {
