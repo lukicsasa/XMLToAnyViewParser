@@ -23,7 +23,7 @@ namespace XMLToAnyViewParser.BLL
 
                     response.Data = model.ResolveForm();
                     response.Status = ResponseStatus.Ok;
-                    response.Message = messageStatusReader.GetStatusMessage(response.Status);
+                    //response.Message = messageStatusReader.GetStatusMessage(response.Status);
 
                     return response;
 

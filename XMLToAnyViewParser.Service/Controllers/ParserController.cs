@@ -17,37 +17,41 @@ namespace XMLToAnyViewParser.Service.Controllers
     {
         [TokenAuthorize]
         [HttpGet]
-        public IHttpActionResult Get(string client, string view)
+        public GetViewResponse Get(string client, string view)
         {
-            try
-            {
+            //try
+            //{
                 GetViewResponse response =
-                    new GetViewResponse {View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, view)};
+                    new GetViewResponse { View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, view) };
 
-                return Ok(response);
-            }
-            catch (Exception ex)
-            {
 
-                return BadRequest(ex.Message);
-            }
+
+                return response;
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    return BadRequest(ex.Message);
+            //}
         }
 
         [AllowAnonymous]
         [HttpGet]
-        public IHttpActionResult GetLoginPage(string client)
+        public IHttpActionResult Get(string client)
         {
             try
             {
                 GetViewResponse response =
-                    new GetViewResponse {View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, "login")};
+                    new GetViewResponse { View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, "login") };
                 return Ok(response);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
+
+
         }
-        
+
     }
 }

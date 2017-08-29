@@ -41,6 +41,9 @@ namespace XMLToAnyViewParser.Service
             config.Routes.MapHttpRoute(
                 name: "GetMethodRoute",
                 routeTemplate: "api/{controller}/{client}/{view}");
+            config.Routes.MapHttpRoute(
+                name: "GetLoginPageMethodRoute",
+                routeTemplate: "api/{controller}/{client}");
 
             config.Routes.MapHttpRoute(
                 name: "PostMethodRoute",

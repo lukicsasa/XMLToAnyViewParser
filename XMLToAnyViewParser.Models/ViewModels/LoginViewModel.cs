@@ -10,7 +10,15 @@ namespace XMLToAnyViewParser.Models.ViewModels
 
         public override object ResolveForm()
         {
-            return "you did it";
+            if(Username == "aa" && Password == "aa")
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
         }
     }
 }

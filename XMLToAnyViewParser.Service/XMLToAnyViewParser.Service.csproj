@@ -84,7 +84,7 @@
       <HintPath>..\packages\MultipartDataMediaFormatter.1.1.0.0\lib\net45\MultipartDataMediaFormatter.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -208,6 +208,7 @@
     </Compile>
     <Compile Include="Helpers\GlobalExceptionHandler.cs" />
     <Compile Include="Helpers\TokenAuthorizeAttribute.cs" />
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\UserJwtModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -215,10 +216,14 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Data\Templates\DesktopTemplate.xslt" />
+    <Content Include="Data\Templates\DesktopTemplate.xslt">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Data\Templates\MobileTemplate.xslt" />
     <Content Include="Data\Templates\WebTemplate.xslt" />
-    <Content Include="Data\Views\LoginView.xml" />
+    <Content Include="Data\Views\LoginView.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -273,6 +278,10 @@
     <ProjectReference Include="..\XMLToAnyViewParser.Common\XMLToAnyViewParser.Common.csproj">
       <Project>{E04445F9-366D-4F2F-A676-B1686BA89371}</Project>
       <Name>XMLToAnyViewParser.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLToAnyViewParser.Entities\XMLToAnyViewParser.Entities.csproj">
+      <Project>{a19bdee9-4644-4572-8305-eeb0e8187568}</Project>
+      <Name>XMLToAnyViewParser.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\XMLToAnyViewParser.Models\XMLToAnyViewParser.Models.csproj">
       <Project>{64e52528-aa2f-4131-8017-b8ee37af0b63}</Project>
