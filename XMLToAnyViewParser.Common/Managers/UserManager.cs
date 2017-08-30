@@ -14,7 +14,7 @@ namespace XMLToAnyViewParser.Common.Managers
             {
                 if (string.IsNullOrWhiteSpace(username)) throw new ValidationException("You must provide login data!");
 
-                var user = uow.UserRepository.First(u => u.Username.ToLower().Trim() == username.ToLower().Trim());
+                var user = uow.UserRepository.Find(u => u.Username.ToLower().Trim() == username.ToLower().Trim()).FirstOrDefault();
                 if (user == null || !PasswordHelper.ValidatePassword(password, user.Password)) throw new ValidationException("Wrong username or password!");
                 return user;
             }

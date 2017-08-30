@@ -44,6 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="JWT, Version=1.3.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\JWT.1.3.4\lib\3.5\JWT.dll</HintPath>
     </Reference>
@@ -208,11 +214,6 @@
     </Compile>
     <Compile Include="Helpers\GlobalExceptionHandler.cs" />
     <Compile Include="Helpers\TokenAuthorizeAttribute.cs" />
-<<<<<<< HEAD
-=======
-    <Compile Include="Models\LoginModel.cs" />
-    <Compile Include="Models\UserJwtModel.cs" />
->>>>>>> 242993718499df7ca35ea8a05bb2856746e7a748
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -254,7 +255,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="config.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -283,11 +283,7 @@
       <Name>XMLToAnyViewParser.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\XMLToAnyViewParser.Entities\XMLToAnyViewParser.Entities.csproj">
-<<<<<<< HEAD
-      <Project>{A19BDEE9-4644-4572-8305-EEB0E8187568}</Project>
-=======
       <Project>{a19bdee9-4644-4572-8305-eeb0e8187568}</Project>
->>>>>>> 242993718499df7ca35ea8a05bb2856746e7a748
       <Name>XMLToAnyViewParser.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\XMLToAnyViewParser.Models\XMLToAnyViewParser.Models.csproj">
