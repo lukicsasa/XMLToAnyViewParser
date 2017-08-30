@@ -204,3 +204,16 @@ C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\Antlr3.Runt
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\obj\Debug\XMLToAnyViewParser.Service.csprojResolveAssemblyReference.cache
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\obj\Debug\XMLToAnyViewParser.Service.dll
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\obj\Debug\XMLToAnyViewParser.Service.pdb
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Entities.dll
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Data.dll
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\AutoMapper.dll
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\EntityFramework.dll
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Data.Model.dll
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Entities.pdb
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Entities.dll.config
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Data.pdb
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Data.dll.config
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\AutoMapper.xml
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\EntityFramework.xml
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Data.Model.pdb
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyViewParser.Data.Model.dll.config

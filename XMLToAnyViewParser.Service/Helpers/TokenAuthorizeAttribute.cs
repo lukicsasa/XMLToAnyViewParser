@@ -7,8 +7,8 @@ using System.Web.Configuration;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
+using XMLToAnyViewParser.Models;
 using XMLToAnyViewParser.Service.Controllers;
-using XMLToAnyViewParser.Service.Models;
 
 namespace XMLToAnyViewParser.Service.Helpers
 {
@@ -54,10 +54,6 @@ namespace XMLToAnyViewParser.Service.Helpers
                 }
 
                 // Validate roles
-                if (Roles != null && !Roles.Split(',').ToList().Intersect(user.Roles).Any())
-                {
-                    throw new AuthenticationException("You do not have permission to access this resource!");
-                }
 
                 // Add current user to base controller
                 var controller = actionContext.ControllerContext.Controller as BaseController;

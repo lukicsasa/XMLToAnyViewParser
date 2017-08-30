@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Web.Configuration;
+using XMLToAnyViewParser.Common.Helpers;
+using XMLToAnyViewParser.Common.Managers;
+using XMLToAnyViewParser.Common.Models;
+using XMLToAnyViewParser.Entities;
 
 namespace XMLToAnyViewParser.Models.ViewModels
 {
@@ -10,7 +15,19 @@ namespace XMLToAnyViewParser.Models.ViewModels
 
         public override object ResolveForm()
         {
-            return "you did it";
+            User user = UserManager.Login(Username, Password);
+            UserModel userModel = Mapper.Map(user);
+            return new { User = userModel, Token = CreateLoginToken(user) };
+        }
+
+        private string CreateLoginToken(User user)
+        {
+            UserJwtModel userModel = Mapper.AutoMap<User, UserJwtModel>(user);
+            userModel.ExpirationDate = DateTime.UtcNow.AddDays(1);
+
+            string secretKey = WebConfigurationManager.AppSettings["JwtSecret"];
+            string token = JWT.JsonWebToken.Encode(userModel, secretKey, JWT.JwtHashAlgorithm.HS256);
+            return token;
         }
     }
 }

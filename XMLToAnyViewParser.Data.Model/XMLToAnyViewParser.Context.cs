@@ -7,14 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using XMLToAnyViewParser.Entities;
-
 namespace XMLToAnyViewParser.Data.Model
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+    using XMLToAnyViewParser.Entities;
+
     public partial class XMLToAnyViewParserEntities : DbContext
     {
         public XMLToAnyViewParserEntities()
@@ -27,7 +26,6 @@ namespace XMLToAnyViewParser.Data.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
 }

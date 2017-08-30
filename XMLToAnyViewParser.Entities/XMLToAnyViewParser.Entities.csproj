@@ -48,9 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Role.cs">
-      <DependentUpon>XMLToAnyViewParser.tt</DependentUpon>
-    </Compile>
     <Compile Include="User.cs">
       <DependentUpon>XMLToAnyViewParser.tt</DependentUpon>
     </Compile>

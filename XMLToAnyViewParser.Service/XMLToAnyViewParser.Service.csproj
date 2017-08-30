@@ -164,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Base\" />
     <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
@@ -202,13 +203,11 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ParserController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\GlobalExceptionHandler.cs" />
     <Compile Include="Helpers\TokenAuthorizeAttribute.cs" />
-    <Compile Include="Models\UserJwtModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,7 +217,9 @@
     <Content Include="Data\Templates\DesktopTemplate.xslt" />
     <Content Include="Data\Templates\MobileTemplate.xslt" />
     <Content Include="Data\Templates\WebTemplate.xslt" />
-    <Content Include="Data\Views\LoginView.xml" />
+    <Content Include="Data\Views\LoginView.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -273,6 +274,10 @@
     <ProjectReference Include="..\XMLToAnyViewParser.Common\XMLToAnyViewParser.Common.csproj">
       <Project>{E04445F9-366D-4F2F-A676-B1686BA89371}</Project>
       <Name>XMLToAnyViewParser.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLToAnyViewParser.Entities\XMLToAnyViewParser.Entities.csproj">
+      <Project>{A19BDEE9-4644-4572-8305-EEB0E8187568}</Project>
+      <Name>XMLToAnyViewParser.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\XMLToAnyViewParser.Models\XMLToAnyViewParser.Models.csproj">
       <Project>{64e52528-aa2f-4131-8017-b8ee37af0b63}</Project>

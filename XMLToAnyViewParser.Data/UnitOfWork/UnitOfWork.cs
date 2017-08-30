@@ -19,7 +19,6 @@ namespace XMLToAnyViewParser.Data.UnitOfWork
         private DbContext _context;
 
         private UserRepository _userRepository;
-        private RoleRepository _roleRepository;
 
         #endregion Fields
 
@@ -33,7 +32,6 @@ namespace XMLToAnyViewParser.Data.UnitOfWork
         #region Repository
 
         public UserRepository UserRepository => _userRepository ?? (_userRepository = new UserRepository(DataContext));
-        public RoleRepository RoleRepository => _roleRepository ?? (_roleRepository = new RoleRepository(DataContext));
 
         #endregion Repository
 

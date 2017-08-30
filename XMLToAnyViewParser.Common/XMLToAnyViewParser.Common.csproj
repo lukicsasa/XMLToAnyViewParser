@@ -49,10 +49,22 @@
     <Compile Include="Helpers\Mapper.cs" />
     <Compile Include="Helpers\PasswordHelper.cs" />
     <Compile Include="Helpers\ValidationHelper.cs" />
+    <Compile Include="Managers\UserManager.cs" />
+    <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XMLToAnyViewParser.Data\XMLToAnyViewParser.Data.csproj">
+      <Project>{18290FBF-8E12-4112-B204-D4F877A84E27}</Project>
+      <Name>XMLToAnyViewParser.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLToAnyViewParser.Entities\XMLToAnyViewParser.Entities.csproj">
+      <Project>{A19BDEE9-4644-4572-8305-EEB0E8187568}</Project>
+      <Name>XMLToAnyViewParser.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

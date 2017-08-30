@@ -62,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\User.sql" />
-    <Build Include="dbo\Tables\Role.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="XMLToAnyViewParser.Sql.publish.xml" />

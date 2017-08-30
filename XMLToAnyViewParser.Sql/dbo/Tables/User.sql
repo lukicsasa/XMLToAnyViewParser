@@ -5,7 +5,5 @@
     [Password] NVARCHAR(200) NOT NULL, 
     [FirstName] NVARCHAR(100) NOT NULL, 
     [LastName] NVARCHAR(100) NOT NULL, 
-    [Email] NVARCHAR(50) NULL, 
-    [RoleId] INT NOT NULL, 
-    CONSTRAINT [FK_User_Role] FOREIGN KEY ([RoleId]) REFERENCES [Role]([Id])
+    [Email] NVARCHAR(50) NULL,
 )

@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="JWT, Version=1.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\JWT.1.3.4\lib\3.5\JWT.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,9 +53,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestModel.cs" />
     <Compile Include="StatusMessage.cs" />
+    <Compile Include="UserJwtModel.cs" />
     <Compile Include="ViewModels\GeneralModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XMLToAnyViewParser.Common\XMLToAnyViewParser.Common.csproj">
+      <Project>{E04445F9-366D-4F2F-A676-B1686BA89371}</Project>
+      <Name>XMLToAnyViewParser.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLToAnyViewParser.Entities\XMLToAnyViewParser.Entities.csproj">
+      <Project>{A19BDEE9-4644-4572-8305-EEB0E8187568}</Project>
+      <Name>XMLToAnyViewParser.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

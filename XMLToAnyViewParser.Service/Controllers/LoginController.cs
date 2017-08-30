@@ -10,10 +10,9 @@ using XMLToAnyViewParser.Models.ViewModels;
 
 namespace XMLToAnyViewParser.Service.Controllers
 {
-    [EnableCors(origins: "http://localhost:55899", headers: "*", methods: "*")]
     public class LoginController : ApiController
     {
-
+        [AllowAnonymous]
         [HttpPost]
         public IHttpActionResult Post([FromBody]LoginViewModel requestData)
         {

@@ -13,7 +13,7 @@ using XMLToAnyViewParser.Service.Helpers;
 
 namespace XMLToAnyViewParser.Service.Controllers
 {
-    public class ParserController : ApiController
+    public class ParserController : BaseController
     {
         [TokenAuthorize]
         [HttpGet]
