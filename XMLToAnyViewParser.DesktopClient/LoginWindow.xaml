@@ -1,0 +1,24 @@
+﻿<Window x:Class="XMLToAnyViewParser.DesktopClient.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XMLToAnyViewParser.DesktopClient"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="575.676" Width="1179.73">
+
+
+
+    <WrapPanel x:Name="gridBody">
+
+
+
+        <Button x:Name="btn" Click="Button_Click" Content="click me"/>
+
+        <TextBlock Grid.Row="1" Name="tb" FontSize="24"/>
+
+
+
+
+    </WrapPanel>
+</Window>
