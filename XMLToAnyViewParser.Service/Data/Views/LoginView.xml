@@ -17,5 +17,10 @@
     <description>Login</description>
   </button>
 
+  <button>
+    <id>register</id>
+    <description>Register</description>
+  </button>
+
   <scriptPath>js/index.js</scriptPath>
 </form>

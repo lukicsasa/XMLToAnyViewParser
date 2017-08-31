@@ -16,8 +16,7 @@ namespace XMLToAnyViewParser.Models.ViewModels
         public override object ResolveForm()
         {
             User user = UserManager.Login(Username, Password);
-            UserModel userModel = Mapper.Map(user);
-            return new { User = userModel, Token = CreateLoginToken(user) };
+            return new { User = user, Token = CreateLoginToken(user) };
         }
 
         private string CreateLoginToken(User user)

@@ -37,12 +37,12 @@ namespace XMLToAnyViewParser.Service.Controllers
 
         [AllowAnonymous]
         [HttpGet]
-        public IHttpActionResult Get(string client)
+        public IHttpActionResult Get(string client, bool isLogin = true)
         {
             try
             {
                 GetViewResponse response =
-                    new GetViewResponse { View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, "login") };
+                    new GetViewResponse { View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, isLogin ? "login" : "register") };
                 return Ok(response);
             }
             catch (Exception ex)
@@ -52,6 +52,5 @@ namespace XMLToAnyViewParser.Service.Controllers
 
 
         }
-
     }
 }

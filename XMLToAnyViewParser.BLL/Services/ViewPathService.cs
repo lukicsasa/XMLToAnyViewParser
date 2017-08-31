@@ -13,7 +13,8 @@ namespace XMLToAnyViewParser.BLL.Services
             {
                 case "login":
                     return HttpContext.Current.Server.MapPath("~/Data/Views/LoginView.xml");
-                
+                case "register":
+                    return HttpContext.Current.Server.MapPath("~/Data/Views/RegisterView.xml");
                 default:
                     throw new BadViewNameException("View name is unsupported.");
             }

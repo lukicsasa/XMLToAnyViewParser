@@ -26,7 +26,13 @@ namespace XMLToAnyViewParser.BLL
                     //response.Message = messageStatusReader.GetStatusMessage(response.Status);
 
                     return response;
+                case "register":
 
+                    response.Data = model.ResolveForm();
+                    response.Status = ResponseStatus.Ok;
+                    //response.Message = messageStatusReader.GetStatusMessage(response.Status);
+
+                    return response;
                 case "home":
 
                     return response;
@@ -35,7 +41,7 @@ namespace XMLToAnyViewParser.BLL
 
             response.Status = ResponseStatus.Unknown;
             response.Data = null;
-            response.Message = messageStatusReader.GetStatusMessage(response.Status);
+            //response.Message = messageStatusReader.GetStatusMessage(response.Status);
 
             return response;
         }

@@ -27,11 +27,9 @@
       <!-- parsing buttons -->
 
       <xsl:for-each select="./button">
-        <xsl:if test="./id = 'submit'">
-          <input type="submit" value="{./description}"/>
-          <!--<xsl:value-of select=""/>
+        <input type="submit" id="{./id}" value="{./description}"/>
+        <!--<xsl:value-of select=""/>
               </button>-->
-        </xsl:if>
       </xsl:for-each>
     </form>
     <script src="{scriptPath}"></script>

@@ -59,6 +59,7 @@
     <Compile Include="ViewModels\GeneralModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XMLToAnyViewParser.Common\XMLToAnyViewParser.Common.csproj">

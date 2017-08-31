@@ -16,16 +16,5 @@ namespace XMLToAnyViewParser.Common.Helpers
 
             return result;
         }
-
-        public static UserModel Map(User user)
-        {
-            if (user == null) return null;
-
-            var userModel = new UserModel
-            {
-                
-            };
-            return userModel;
-        }
     }
 }
