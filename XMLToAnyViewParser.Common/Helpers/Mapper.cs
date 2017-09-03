@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using XMLToAnyViewParser.Common.Models;
-using XMLToAnyViewParser.Entities;
 
 namespace XMLToAnyViewParser.Common.Helpers
 {
