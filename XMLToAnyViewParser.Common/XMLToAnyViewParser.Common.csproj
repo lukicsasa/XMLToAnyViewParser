@@ -62,7 +62,7 @@
       <Name>XMLToAnyViewParser.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\XMLToAnyViewParser.Entities\XMLToAnyViewParser.Entities.csproj">
-      <Project>{A19BDEE9-4644-4572-8305-EEB0E8187568}</Project>
+      <Project>{a19bdee9-4644-4572-8305-eeb0e8187568}</Project>
       <Name>XMLToAnyViewParser.Entities</Name>
     </ProjectReference>
   </ItemGroup>

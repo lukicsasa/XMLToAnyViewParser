@@ -28,7 +28,7 @@ namespace XMLToAnyViewParser.DesktopClient.Commands
         public Command(Action<object> execute)
         {
             this.execute = execute;
-            this.canExecute = null;
+            this.canExecute = p => true;
         }
 
         #endregion

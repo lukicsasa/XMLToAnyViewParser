@@ -18,6 +18,8 @@ namespace XMLToAnyViewParser.DesktopClient.ViewModels
 
         private RestClient client;
 
+        private FormLoader formLoader;
+
         private string username;
 
         private string password;
@@ -35,6 +37,7 @@ namespace XMLToAnyViewParser.DesktopClient.ViewModels
         public LoginClientViewModel()
         {
             this.client = new RestClient();
+            this.formLoader = new FormLoader();
         }
 
         #endregion
@@ -84,8 +87,6 @@ namespace XMLToAnyViewParser.DesktopClient.ViewModels
             }
         }
 
-
-
         public event PropertyChangedEventHandler PropertyChanged;
         #endregion
 
@@ -115,7 +116,7 @@ namespace XMLToAnyViewParser.DesktopClient.ViewModels
 
         private bool SubmitCommandCanExecute()
         {
-            return true; /*Username != null && Password != null;*/
+            return Username != string.Empty && Password != string.Empty;
         }
 
         #endregion

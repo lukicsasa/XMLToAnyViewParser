@@ -5,20 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XMLToAnyViewParser.DesktopClient"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="575.676" Width="1179.73">
+        Title="LoginWindow" Height="575.676" Width="1179.73"
+        Loaded="Window_Loaded">
 
 
 
-    <WrapPanel x:Name="gridBody">
-
-
-
-        <Button x:Name="btn" Click="Button_Click" Content="click me"/>
-
-        <TextBlock Grid.Row="1" Name="tb" FontSize="24"/>
-
-
-
-
+    <WrapPanel x:Name="body">
     </WrapPanel>
 </Window>

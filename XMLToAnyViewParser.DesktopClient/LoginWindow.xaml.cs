@@ -11,7 +11,8 @@ namespace XMLToAnyViewParser.DesktopClient
     /// </summary>
     public partial class LoginWindow : Window
     {
-        private RestClient client;
+
+        private FormLoader formLoader;
 
         public LoginWindow()
         {
@@ -19,45 +20,17 @@ namespace XMLToAnyViewParser.DesktopClient
 
             this.DataContext = new LoginClientViewModel();
 
-            this.client = new RestClient();
-        }
-
-
-
-
-        private async void LoadForm()
-        {
-            try
-            {
-                var response = await client.GetMethodAsync("parser/desktop");
-
-
-                var element = (FrameworkElement)XamlReader.Parse(response.View);
-                //element.BeginInit();
-                //element.DataContext = new LoginClientViewModel();
-
-                ////element.Measure(new Size())
-
-                //element.EndInit();
-                //element.UpdateLayout();
-
-                this.gridBody.Children.Add(element);
-
-
-
-                this.btn.Visibility = Visibility.Hidden;
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-
+            this.formLoader = new FormLoader();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.LoadForm();
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.formLoader.LoadForm("parser/desktop", this.body);
         }
     }
 }
