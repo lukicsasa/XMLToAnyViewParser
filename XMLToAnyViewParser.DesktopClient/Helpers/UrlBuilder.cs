@@ -8,7 +8,7 @@ namespace XMLToAnyViewParser.DesktopClient.Helpers
 {
     public static class UrlBuilder
     {
-        private static readonly string URL = "http://localhost:52042/api/";
+        private static readonly string URL = "https://localhost:44326/api/";
 
         public static Uri GetUrl(string url)
         {

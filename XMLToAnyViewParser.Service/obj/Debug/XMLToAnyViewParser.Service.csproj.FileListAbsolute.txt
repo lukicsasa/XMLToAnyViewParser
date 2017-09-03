@@ -155,3 +155,5 @@ C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\XMLToAnyVie
 =======
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Service\obj\Debug\XMLToAnyViewParser.Service.csprojResolveAssemblyReference.cache
 >>>>>>> 242993718499df7ca35ea8a05bb2856746e7a748
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\EntityFramework.SqlServer.dll
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Service\bin\EntityFramework.SqlServer.xml

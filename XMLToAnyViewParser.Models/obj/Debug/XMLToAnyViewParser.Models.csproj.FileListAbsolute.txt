@@ -31,3 +31,5 @@ C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\AutoMa
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\EntityFramework.xml
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToAnyViewParser.Data.Model.pdb
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToAnyViewParser.Data.Model.dll.config
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\Newtonsoft.Json.dll
+C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\Newtonsoft.Json.xml

@@ -19,23 +19,13 @@ namespace XMLToAnyViewParser.Service.Controllers
         [HttpGet]
         public GetViewResponse Get(string client, string view)
         {
-            //try
-            //{
-                GetViewResponse response =
-                    new GetViewResponse { View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, view) };
-
-
-
-                return response;
-            //}
-            //catch (Exception ex)
-            //{
-
-            //    return BadRequest(ex.Message);
-            //}
+            GetViewResponse response =
+                new GetViewResponse { View = XmlToViewParser.Service.ViewsTransformatter.Transform(client, view) };
+            return response;
         }
 
         [AllowAnonymous]
+        [HTTPSRequired]
         [HttpGet]
         public IHttpActionResult Get(string client, bool isLogin = true)
         {
@@ -49,8 +39,6 @@ namespace XMLToAnyViewParser.Service.Controllers
             {
                 return BadRequest(ex.Message);
             }
-
-
         }
     }
 }

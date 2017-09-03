@@ -18,7 +18,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44326</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -215,6 +215,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\GlobalExceptionHandler.cs" />
+    <Compile Include="Helpers\HTTPSRequiredAttribute.cs" />
     <Compile Include="Helpers\TokenAuthorizeAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -227,6 +228,7 @@
     </Content>
     <Content Include="Data\Templates\MobileTemplate.xslt" />
     <Content Include="Data\Templates\WebTemplate.xslt" />
+    <Content Include="Data\Views\HomeView.xml" />
     <Content Include="Data\Views\LoginView.xml">
       <SubType>Designer</SubType>
     </Content>

@@ -34,7 +34,8 @@ namespace XMLToAnyViewParser.BLL
 
                     return response;
                 case "home":
-
+                    response.Data = model.ResolveForm();
+                    response.Status = ResponseStatus.Ok;
                     return response;
 
             }

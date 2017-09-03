@@ -5,12 +5,14 @@ using System.Web;
 using System.Web.Http;
 using XMLToAnyViewParser.BLL;
 using XMLToAnyViewParser.Models.ViewModels;
+using XMLToAnyViewParser.Service.Helpers;
 
 namespace XMLToAnyViewParser.Service.Controllers
 {
     public class RegisterController : ApiController
     {
         [AllowAnonymous]
+        [HTTPSRequired]
         [HttpPost]
         public IHttpActionResult Post([FromBody]RegisterViewModel requestData)
         {
