@@ -22,6 +22,12 @@ namespace XMLToAnyViewParser.DesktopClient.Helpers
 
         public async Task<GetViewResponse> GetMethodAsync(string url)
         {
+            if (!string.IsNullOrWhiteSpace(GlobalData.Token))
+            {
+                client.DefaultRequestHeaders.Add("Authorization", GlobalData.Token);
+
+            }
+
             var response = await client.GetAsync(UrlBuilder.GetUrl(url)).ConfigureAwait(false);
 
             //return response;
@@ -40,10 +46,16 @@ namespace XMLToAnyViewParser.DesktopClient.Helpers
 
         }
 
-        public async Task<FormSubmitResponseJson> PostMethodAsync(GeneralModel data, string url)
+        public async Task<FormSubmitResponseJson> PostMethodAsync(object data, string url)
         {
             try
             {
+                if (!string.IsNullOrWhiteSpace(GlobalData.Token))
+                {
+                    client.DefaultRequestHeaders.Add("Authorization", GlobalData.Token);
+
+                }
+
                 var json = JsonConvert.SerializeObject(data);
 
                 var requestContent = new StringContent(json, Encoding.UTF8, "application/json");
@@ -63,27 +75,38 @@ namespace XMLToAnyViewParser.DesktopClient.Helpers
 
                 throw ex;
             }
-        //}
+        }
 
-        //public async Task<bool> PutMethodAsync<T>(T data, string url) where T : class
-        //{
-        //    var json = JsonConvert.SerializeObject(data);
+        public async Task<FormSubmitResponseJson> PutMethodAsync(object data, string url)
+        {
+            try
+            {
+                if (!string.IsNullOrWhiteSpace(GlobalData.Token))
+                {
+                    client.DefaultRequestHeaders.Add("Authorization", GlobalData.Token);
 
-        //    var requestContent = new StringContent(json, Encoding.UTF8, "application/json");
+                }
 
+                var json = JsonConvert.SerializeObject(data);
 
+                var requestContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-        //    HttpResponseMessage response = await client.PutAsync(UrlBuilder.GetUrl(url), requestContent);
+                HttpResponseMessage response = await client.PutAsync(UrlBuilder.GetUrl(url), requestContent).ConfigureAwait(false);
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        var responseContent = await response.Content.ReadAsStringAsync();
+                    return JsonConvert.DeserializeObject<FormSubmitResponseJson>(responseContent);
+                }
 
-        //        return JsonConvert.DeserializeObject<bool>(responseContent);
-        //    }
+                return new FormSubmitResponseJson { Data = false, Status = ResponseStatus.BadDataSent };
+            }
+            catch (Exception ex)
+            {
 
-        //    return false;
-        //}
+                throw ex;
+            }
+        }
 
         //public async Task<bool> DeleteMethodAsync<T>(T data, string url) where T : class
         //{
@@ -101,7 +124,7 @@ namespace XMLToAnyViewParser.DesktopClient.Helpers
         //    }
 
         //    return false;
-        }
     }
 }
+
 

@@ -13,13 +13,13 @@
   </textbox>
   
   <textbox>
-    <id>first-name</id>
-    <description>First name</description>
+    <id>firstname</id>
+    <description>FirstName</description>
   </textbox>
 
   <textbox>
-    <id>last-name</id>
-    <description>Last name</description>
+    <id>lastname</id>
+    <description>LastName</description>
   </textbox>
 
   <button>

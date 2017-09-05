@@ -21,7 +21,7 @@
           <TextBlock Text="{./description}"/>
           <TextBox Name="{./id}" Height ="25" Width="150">
             <TextBox.Text>
-              <Binding Path="{./description}"  />
+              <Binding Path="{./description}"/>
             </TextBox.Text>
           </TextBox>
         </xsl:if>

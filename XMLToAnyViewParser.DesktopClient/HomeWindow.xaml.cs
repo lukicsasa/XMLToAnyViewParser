@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using XMLToAnyViewParser.DesktopClient.Helpers;
+using XMLToAnyViewParser.DesktopClient.ViewModels;
 
 namespace XMLToAnyViewParser.DesktopClient
 {
@@ -19,9 +21,26 @@ namespace XMLToAnyViewParser.DesktopClient
     /// </summary>
     public partial class HomeWindow : Window
     {
+        private FormLoader formLoader;
+
         public HomeWindow()
         {
             InitializeComponent();
+
+            this.formLoader = new FormLoader();
+            this.DataContext = new HomeClientViewModel(GlobalData.User);
+        }
+
+        private void HomeWindow_OnLoaded(object sender, RoutedEventArgs e)
+        {
+            this.formLoader.LoadForm("parser/desktop/home", this.body);
+        }
+
+        
+        protected override void OnClosed(EventArgs e)
+        {
+            GlobalData.Token = string.Empty;
+            base.OnClosed(e);
         }
     }
 }

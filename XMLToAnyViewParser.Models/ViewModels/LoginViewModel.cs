@@ -29,4 +29,11 @@ namespace XMLToAnyViewParser.Models.ViewModels
             return token;
         }
     }
+
+    public class UserTokenModel
+    {
+        public User User{ get; set; }
+
+        public string Token { get; set; }      
+    }
 }

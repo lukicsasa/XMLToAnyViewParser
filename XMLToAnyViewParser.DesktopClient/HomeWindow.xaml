@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XMLToAnyViewParser.DesktopClient"
         mc:Ignorable="d"
-        Title="HomeWindow" Height="300" Width="300">
-    <Grid>
+        Title="HomeWindow" Height="300" Width="300"
+        Loaded="HomeWindow_OnLoaded">
+    <WrapPanel Name="body">
         
-    </Grid>
+    </WrapPanel>
 </Window>

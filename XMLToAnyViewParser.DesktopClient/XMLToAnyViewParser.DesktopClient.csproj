@@ -63,12 +63,14 @@
     </Compile>
     <Compile Include="Commands\Command.cs" />
     <Compile Include="Helpers\FormLoader.cs" />
+    <Compile Include="Helpers\GlobalData.cs" />
     <Compile Include="HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\HomeClientViewModel.cs" />
     <Compile Include="ViewModels\LoginClientViewModel.cs" />
     <Compile Include="ViewModels\RegisterClientViewModel.cs" />
   </ItemGroup>
@@ -116,6 +118,14 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\XMLToAnyViewParser.Common\XMLToAnyViewParser.Common.csproj">
+      <Project>{E04445F9-366D-4F2F-A676-B1686BA89371}</Project>
+      <Name>XMLToAnyViewParser.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLToAnyViewParser.Entities\XMLToAnyViewParser.Entities.csproj">
+      <Project>{A19BDEE9-4644-4572-8305-EEB0E8187568}</Project>
+      <Name>XMLToAnyViewParser.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XMLToAnyViewParser.Models\XMLToAnyViewParser.Models.csproj">
       <Project>{64E52528-AA2F-4131-8017-B8EE37AF0B63}</Project>
       <Name>XMLToAnyViewParser.Models</Name>
