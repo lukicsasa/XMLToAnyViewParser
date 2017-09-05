@@ -25,7 +25,6 @@ C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\AutoMa
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\EntityFramework.xml
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToAnyViewParser.Data.Model.pdb
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToAnyViewParser.Data.Model.dll.config
-E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\obj\Debug\XMLToAnyViewParser.Models.csprojResolveAssemblyReference.cache
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToAnyViewParser.Models.dll
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToAnyViewParser.Models.pdb
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\JWT.dll
@@ -46,5 +45,6 @@ E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\AutoMapp
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\EntityFramework.xml
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToAnyViewParser.Data.Model.pdb
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\bin\Debug\XMLToAnyViewParser.Data.Model.dll.config
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\obj\Debug\XMLToAnyViewParser.Models.csprojResolveAssemblyReference.cache
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\obj\Debug\XMLToAnyViewParser.Models.dll
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.Models\obj\Debug\XMLToAnyViewParser.Models.pdb

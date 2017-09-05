@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 using XMLToAnyViewParser.DesktopClient.Commands;
 using XMLToAnyViewParser.DesktopClient.Helpers;
@@ -12,23 +13,27 @@ using XMLToAnyViewParser.Models.ViewModels;
 
 namespace XMLToAnyViewParser.DesktopClient.ViewModels
 {
-    public class LoginClientViewModel : INotifyPropertyChanged
+    public class RegisterClientViewModel : INotifyPropertyChanged
     {
         #region Data members
 
         private RestClient client;
 
-        private FormLoader formLoader;
-
         private string username;
 
         private string password;
 
+        private string firstName;
+
+        private string lastName;
+
+        private string email;
+
+
+
         #region Commands
 
         private ICommand submitCommand;
-
-        private ICommand registerCommand;
 
         #endregion
 
@@ -36,10 +41,9 @@ namespace XMLToAnyViewParser.DesktopClient.ViewModels
 
         #region Constructors
 
-        public LoginClientViewModel()
+        public RegisterClientViewModel()
         {
             this.client = new RestClient();
-            this.formLoader = new FormLoader();
         }
 
         #endregion
@@ -48,26 +52,50 @@ namespace XMLToAnyViewParser.DesktopClient.ViewModels
 
         public string Username
         {
-            get
-            {
-                return this.username;
-            }
+            get => username;
             set
             {
-                this.username = value;
+                username = value;
                 RaisePropertyChange();
             }
         }
 
         public string Password
         {
-            get
-            {
-                return this.password;
-            }
+            get => password;
             set
             {
-                this.password = value;
+                password = value;
+                RaisePropertyChange();
+            }
+        }
+
+        public string FirstName
+        {
+            get => firstName;
+            set
+            {
+                firstName = value;
+                RaisePropertyChange();
+            }
+        }
+
+        public string LastName
+        {
+            get => lastName;
+            set
+            {
+                lastName = value;
+                RaisePropertyChange();
+            }
+        }
+
+        public string Email
+        {
+            get => email;
+            set
+            {
+                email = value;
                 RaisePropertyChange();
             }
         }
@@ -80,7 +108,7 @@ namespace XMLToAnyViewParser.DesktopClient.ViewModels
         {
             get
             {
-                if (this.submitCommand == null)
+                if(this.submitCommand == null)
                 {
                     this.submitCommand = new Command(p => SubmitCommandExecute(), p => SubmitCommandCanExecute());
                 }
@@ -89,45 +117,30 @@ namespace XMLToAnyViewParser.DesktopClient.ViewModels
             }
         }
 
-        public ICommand RegisterCommand
-        {
-            get
-            {
-                if(this.registerCommand == null)
-                {
-                    this.registerCommand = new Command(p => RegisterCommandExecute());
-                }
-
-                return this.registerCommand;
-            }
-        }
-
         public event PropertyChangedEventHandler PropertyChanged;
+
         #endregion
 
         #region Commands Execute
 
         private async void SubmitCommandExecute()
         {
-            GeneralModel user = new LoginViewModel
+            GeneralModel user = new RegisterViewModel
             {
-                ViewModelType = "login",
+                ViewModelType = "register",
                 Username = this.Username,
-                Password = this.Password
+                Password = this.Password,
+                FirstName = this.FirstName,
+                LastName = this.LastName,
+                Email = this.Email
             };
 
-            var response = await client.PostMethodAsync(user, "login");
+            var response = await client.PostMethodAsync(user, "register");
 
-            if(response.Status == Models.ResponseStatus.Ok)
+            if (response.Status == Models.ResponseStatus.Ok)
             {
-                new HomeWindow().ShowDialog();
+                MessageBox.Show("Successfully registrated!");
             }
-
-        }
-        
-        private void RegisterCommandExecute()
-        {
-            new RegisterWindow().ShowDialog();
         }
 
         #endregion
@@ -136,12 +149,16 @@ namespace XMLToAnyViewParser.DesktopClient.ViewModels
 
         private bool SubmitCommandCanExecute()
         {
-            return !string.IsNullOrEmpty(Username) && !string.IsNullOrEmpty(Password);
+            return !string.IsNullOrEmpty(FirstName) &&
+                   !string.IsNullOrEmpty(LastName) &&
+                   !string.IsNullOrEmpty(Username) &&
+                   !string.IsNullOrEmpty(Password) &&
+                   !string.IsNullOrEmpty(Email);
         }
 
         #endregion
 
-        #region Protected Methods
+        #region Protected methods
 
         protected void RaisePropertyChange([CallerMemberName] string caller = "")
         {

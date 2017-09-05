@@ -37,8 +37,14 @@
               <Binding Path="SubmitCommand"/>
             </Button.Command>
           </Button>
-          <!--<xsl:value-of select=""/>
-              </button>-->
+        </xsl:if>
+
+        <xsl:if test="./id != 'submit'">
+          <Button Name="{./id}" Content="{./description}">
+            <Button.Command>
+              <Binding Path="{./commandName}"/>
+            </Button.Command>
+          </Button>
         </xsl:if>
       </xsl:for-each>
     </WrapPanel>
