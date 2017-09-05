@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLToAnyViewParser.Service", "XMLToAnyViewParser.Service\XMLToAnyViewParser.Service.csproj", "{490181C7-736F-4446-922F-6322DBCD0852}"
 EndProject
@@ -14,6 +14,25 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{8E25BCEA-BAD9-4ACE-95A1-8335A3093023}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "XMLToAnyViewParser.WebClient", "..\XMLToAnyViewParser.WebClient\", "{033DEC0E-4AAA-49B8-BDD0-D8F5ADCEF339}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55899"
+		Debug.AspNetCompiler.PhysicalPath = "..\XMLToAnyViewParser.WebClient\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55899\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55899"
+		Release.AspNetCompiler.PhysicalPath = "..\XMLToAnyViewParser.WebClient\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55899\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55899"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_55899"

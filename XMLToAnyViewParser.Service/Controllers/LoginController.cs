@@ -7,12 +7,14 @@ using System.Web.Http;
 using System.Web.Http.Cors;
 using XMLToAnyViewParser.BLL;
 using XMLToAnyViewParser.Models.ViewModels;
+using XMLToAnyViewParser.Service.Helpers;
 
 namespace XMLToAnyViewParser.Service.Controllers
 {
     public class LoginController : ApiController
     {
         [AllowAnonymous]
+        [HTTPSRequired]
         [HttpPost]
         public IHttpActionResult Post([FromBody]LoginViewModel requestData)
         {

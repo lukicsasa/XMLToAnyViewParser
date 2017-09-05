@@ -18,7 +18,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44326</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -211,10 +211,12 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ParserController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\GlobalExceptionHandler.cs" />
+    <Compile Include="Helpers\HTTPSRequiredAttribute.cs" />
     <Compile Include="Helpers\TokenAuthorizeAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -227,6 +229,7 @@
     </Content>
     <Content Include="Data\Templates\MobileTemplate.xslt" />
     <Content Include="Data\Templates\WebTemplate.xslt" />
+    <Content Include="Data\Views\HomeView.xml" />
     <Content Include="Data\Views\LoginView.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -284,6 +287,10 @@
     <ProjectReference Include="..\XMLToAnyViewParser.Common\XMLToAnyViewParser.Common.csproj">
       <Project>{E04445F9-366D-4F2F-A676-B1686BA89371}</Project>
       <Name>XMLToAnyViewParser.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLToAnyViewParser.Data\XMLToAnyViewParser.Data.csproj">
+      <Project>{18290FBF-8E12-4112-B204-D4F877A84E27}</Project>
+      <Name>XMLToAnyViewParser.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\XMLToAnyViewParser.Entities\XMLToAnyViewParser.Entities.csproj">
       <Project>{a19bdee9-4644-4572-8305-eeb0e8187568}</Project>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<form>
+  <id>homeView</id>
+
+  <textbox>
+    <id>username</id>
+    <description>Username</description>
+  </textbox>
+
+  <textbox>
+    <id>email</id>
+    <description>Email</description>
+  </textbox>
+  
+  <textbox>
+    <id>first-name</id>
+    <description>First name</description>
+  </textbox>
+
+  <textbox>
+    <id>last-name</id>
+    <description>Last name</description>
+  </textbox>
+
+  <button>
+    <id>submit</id>
+    <description>Update</description>
+  </button>
+</form>

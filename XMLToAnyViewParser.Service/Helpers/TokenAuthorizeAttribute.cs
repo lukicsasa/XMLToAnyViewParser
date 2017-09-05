@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Authentication;
+using System.Net.Http;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
+using XMLToAnyViewParser.Common.Exceptions;
 using XMLToAnyViewParser.Models;
 using XMLToAnyViewParser.Service.Controllers;
 
@@ -22,6 +23,11 @@ namespace XMLToAnyViewParser.Service.Helpers
         {
             if (!SkipValidation(actionContext))
             {
+                //if (actionContext.Request.RequestUri.Scheme != Uri.UriSchemeHttps)
+                //{
+                //    throw new AuthenticationException("HTTPS required");
+                //}
+
                 var authorizationHeader = actionContext.Request.Headers.FirstOrDefault(h => h.Key == "Authorization");
                 if (authorizationHeader.Key == null)
                 {
