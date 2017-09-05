@@ -29,7 +29,6 @@ C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\EntityFra
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.Data.Model.pdb
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.Data.Model.dll.config
 C:\PrivateProjects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\JWT.dll
-E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.csprojResolveAssemblyReference.cache
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.BLL.dll
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.BLL.pdb
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\Newtonsoft.Json.dll
@@ -52,5 +51,6 @@ E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\AutoMapper.
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\EntityFramework.xml
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.Data.Model.pdb
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\bin\Debug\XMLToAnyViewParser.Data.Model.dll.config
+E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.csprojResolveAssemblyReference.cache
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.dll
 E:\urke\Projects\XMLToAnyViewParser\XMLToAnyViewParser.BLL\obj\Debug\XMLToAnyViewParser.BLL.pdb

@@ -13,12 +13,12 @@
   </textbox>
 
   <textbox>
-    <id>first-name</id>
-    <description>First name</description>
+    <id>firstName</id>
+    <description>FirstName</description>
   </textbox>
   <textbox>
-    <id>last-name</id>
-    <description>Last name</description>
+    <id>lastName</id>
+    <description>LastName</description>
   </textbox>
   <textbox>
     <id>email</id>
@@ -27,7 +27,7 @@
   
   <button>
     <id>submit</id>
-    <description>Submit</description>
+    <description>Registrate</description>
   </button>
 
   <scriptPath>js/index.js</scriptPath>

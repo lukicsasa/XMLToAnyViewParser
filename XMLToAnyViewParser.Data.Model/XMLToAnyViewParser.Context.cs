@@ -12,8 +12,7 @@ namespace XMLToAnyViewParser.Data.Model
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    using XMLToAnyViewParser.Entities;
-
+    
     public partial class XMLToAnyViewParserEntities : DbContext
     {
         public XMLToAnyViewParserEntities()

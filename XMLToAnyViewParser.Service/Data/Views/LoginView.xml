@@ -20,6 +20,7 @@
   <button>
     <id>register</id>
     <description>Register</description>
+    <commandName>RegisterCommand</commandName>
   </button>
 
   <scriptPath>js/index.js</scriptPath>
