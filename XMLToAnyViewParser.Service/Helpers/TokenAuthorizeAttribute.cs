@@ -23,10 +23,10 @@ namespace XMLToAnyViewParser.Service.Helpers
         {
             if (!SkipValidation(actionContext))
             {
-                //if (actionContext.Request.RequestUri.Scheme != Uri.UriSchemeHttps)
-                //{
-                //    throw new AuthenticationException("HTTPS required");
-                //}
+                if (actionContext.Request.RequestUri.Scheme != Uri.UriSchemeHttps)
+                {
+                    throw new AuthenticationException("HTTPS required");
+                }
 
                 var authorizationHeader = actionContext.Request.Headers.FirstOrDefault(h => h.Key == "Authorization");
                 if (authorizationHeader.Key == null)
