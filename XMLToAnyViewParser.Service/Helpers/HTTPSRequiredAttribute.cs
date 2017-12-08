@@ -12,10 +12,10 @@ namespace XMLToAnyViewParser.Service.Helpers
     {
         public override void OnActionExecuting(HttpActionContext actionContext)
         {
-            //if (actionContext.Request.RequestUri.Scheme != Uri.UriSchemeHttps)
-            //{
-            //    throw new AuthenticationException("HTTPS required");
-            //}
+            if (actionContext.Request.RequestUri.Scheme != Uri.UriSchemeHttps)
+            {
+                throw new AuthenticationException("HTTPS required");
+            }
         }
     }
 }
